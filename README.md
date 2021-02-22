@@ -28,4 +28,4 @@ There is also a button which will open up the google map and automatically selec
 I have uploaded 3 files :
  1. ProParking.ino : This is an ARDUINO file. 
  2. ProParking.apk : This is the apk file to be installed
- 3. Proparking.aia : This is the MIT app inventor file extension. You can upload this file into MIT app inventor to see how I build the app and can make neccessary changes.
+ 3. Proparking.aia : This is the MIT app inventor file extension. You can upload this file into MIT app inventor to see how I build the app and can make neccessary changes. 
