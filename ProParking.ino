@@ -1,12 +1,12 @@
 #include <Servo.h> // including servo library.
-#include <LiquidCrystal_I2C.h>
-#include <ESP8266WiFi.h>
+#include <LiquidCrystal_I2C.h>  // includeing I2C lcd library.
+#include <ESP8266WiFi.h>        // including NODEMCU library
 #include <FirebaseArduino.h>
 #include <ArduinoJson.h>
 #include <ESP8266HTTPClient.h>
 
-#define FIREBASE_HOST "project123-c6f28.firebaseio.com" //--> URL address of your Firebase Realtime Database.
-#define FIREBASE_AUTH "ua5CGrWl7cBOwluVUl5wzJeuj8xOD9xdOFYqXt79" //--> Your firebase database secret code.
+#define FIREBASE_HOST "< >" //--> URL address of your Firebase Realtime Database.
+#define FIREBASE_AUTH "< >" //--> Your firebase database secret code.
 
 #define ON_Board_LED 2  //--> Defining an On Board LED, used for indicators when the process of connecting to a wifi router
 
@@ -24,8 +24,8 @@
 
 LiquidCrystal_I2C i2c_lcd(lcd_addr,En_pin,Rw_pin,Rs_pin,D4_pin,D5_pin,D6_pin,D7_pin);
 
-const char* ssid = "GGG"; //--> Your wifi name or SSID.
-const char* password = "ajigopi3"; //--> Your wifi password.
+const char* ssid = "< >"; //--> Your wifi name or SSID.
+const char* password = "< >"; //--> Your wifi password.
 Servo entry_servo; // Giving name to entry_servo.
 Servo exit_servo; // Giving name to exit_servo.
 
@@ -101,10 +101,10 @@ void loop() {
       return;
   }
   
- if (getentry == "1" && entry_ir==0){
+ if (getentry == "1" && entry_ir==0){                        // "getentry" will be equal to 1 when the user enter the correct otp for entry gate. "entry_ir" will be equal to 1 when vehicle is deteted by ir at entry gate.
   entry_servo.write(0);Serial.println("entry_gate open");
   delay(3000);
-  entry_servo.write(90);Serial.println("entry_gate close");
+  entry_servo.write(90);Serial.println("entry_gate close");   // after 3 seconds the gate is closed.
 
   Firebase.setString("project123/entrygate",dataSend);
    
@@ -115,8 +115,8 @@ void loop() {
       return;
   }
  }
-
-  if (getexit == "1" && exit_ir==0){
+ 
+  if (getexit == "1" && exit_ir==0){                         // "getexit" will be equal to 1 when the user enter the correct otp for exit gate. "exit_ir" will be equal to 1 when vehicle is deteted by ir at exit gate
   exit_servo.write(0);Serial.println("exit_gate open");
   delay(3000);
   exit_servo.write(90);Serial.println("exit_gate close");
