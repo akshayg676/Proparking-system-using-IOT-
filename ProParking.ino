@@ -101,7 +101,7 @@ void loop() {
       return;
   }
   
- if (getentry == "1" && entry_ir==0){                        // "getentry" will be equal to 1 when the user enter the correct otp for entry gate. "entry_ir" will be equal to 1 when vehicle is deteted by ir at entry gate.
+ if (getentry == "1" && entry_ir==0){                        // "getentry" will be equal to 1 when the user enter the correct otp for entry gate in the Proparking app. "entry_ir" will be equal to 1 when vehicle is deteted by ir at entry gate.
   entry_servo.write(0);Serial.println("entry_gate open");
   delay(3000);
   entry_servo.write(90);Serial.println("entry_gate close");   // after 3 seconds the gate is closed.
@@ -116,10 +116,10 @@ void loop() {
   }
  }
  
-  if (getexit == "1" && exit_ir==0){                         // "getexit" will be equal to 1 when the user enter the correct otp for exit gate. "exit_ir" will be equal to 1 when vehicle is deteted by ir at exit gate
+  if (getexit == "1" && exit_ir==0){                         // "getexit" will be equal to 1 when the user enter the correct otp for exit gate in the Proparking app. "exit_ir" will be equal to 1 when vehicle is deteted by ir at exit gate
   exit_servo.write(0);Serial.println("exit_gate open");
   delay(3000);
-  exit_servo.write(90);Serial.println("exit_gate close");
+  exit_servo.write(90);Serial.println("exit_gate close");     // after 3 seconds the gate is closed.
 
   Firebase.setString("project123/exitgate",dataSend);
    
