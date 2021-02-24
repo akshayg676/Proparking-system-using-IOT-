@@ -45,15 +45,15 @@ void setup() {
   pinMode(14,INPUT);  //Attaching entry_IR to D5.
   pinMode(12,INPUT);  //Attaching exit_IR to D6.
   entry_servo.attach(13); // Attaching Servo to D7.
-  exit_servo.attach(15); // Attaching Servo to D8
+  exit_servo.attach(15); // Attaching Servo to D8.
   Serial.begin(9600);
   delay(500);
   
   WiFi.begin(ssid, password); 
   Serial.println("");
     
-  pinMode(ON_Board_LED,OUTPUT); //--> On Board LED port Direction output
-  digitalWrite(ON_Board_LED, HIGH); //--> Turn off Led On Board
+  pinMode(ON_Board_LED,OUTPUT); //--> On Board LED port Direction output.
+  digitalWrite(ON_Board_LED, HIGH); //--> Turn off Led On Board.
 
   Serial.print("Connecting");
   while (WiFi.status() != WL_CONNECTED) {
