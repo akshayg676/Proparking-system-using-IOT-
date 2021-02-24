@@ -30,4 +30,7 @@ I have uploaded 3 files :
  2. ProParking.apk : This is the apk file to be installed
  3. Proparking.aia : This is the MIT app inventor file extension. You can upload this file into MIT app inventor to see how I build the app and can make neccessary changes. 
 
-To working model of the project is build using NODEMCU,
+To working model of the project is build using:
+ 1.NODEMCU,
+ 2.Servo motors (here 2 servo motors are used. One for entry gate and one for exit gate)
+ 3. IR sensors (here 2 IR sensors are used. One for entry gate and one for exit gate.
