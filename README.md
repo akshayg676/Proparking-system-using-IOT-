@@ -30,4 +30,4 @@ I have uploaded 3 files :
  2. ProParking.apk : This is the apk file to be installed
  3. Proparking.aia : This is the MIT app inventor file extension. You can upload this file into MIT app inventor to see how I build the app and can make neccessary changes. 
 
-The project model
+To working model of the project is build using NODEMCU,
