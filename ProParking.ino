@@ -1,6 +1,6 @@
 #include <Servo.h> // including servo library.
 #include <LiquidCrystal_I2C.h>  // includeing I2C lcd library.
-#include <ESP8266WiFi.h>        // including NODEMCU library
+#include <ESP8266WiFi.h>        // including NODEMCU library.
 #include <FirebaseArduino.h>
 #include <ArduinoJson.h>
 #include <ESP8266HTTPClient.h>
@@ -8,11 +8,11 @@
 #define FIREBASE_HOST "< >" //--> URL address of your Firebase Realtime Database.
 #define FIREBASE_AUTH "< >" //--> Your firebase database secret code.
 
-#define ON_Board_LED 2  //--> Defining an On Board LED, used for indicators when the process of connecting to a wifi router
+#define ON_Board_LED 2  //--> Defining an On Board LED, used for indicators when the process of connecting to a wifi router.
 
-#define lcd_addr 0x27     // I2C address of typical I2C LCD Backpack
+#define lcd_addr 0x27     // I2C address of typical I2C LCD Backpack.
 
-// LCD Pins to I2C LCD Backpack - These are default for HD44780 LCD's
+// LCD Pins to I2C LCD Backpack - These are default for HD44780 LCD's.
 #define Rs_pin 0
 #define Rw_pin 1
 #define En_pin 2
