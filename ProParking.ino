@@ -43,8 +43,8 @@ void setup() {
   i2c_lcd.clear(); // Clear the LCD screen.
   
   pinMode(14,INPUT);  //Attaching entry_IR to D5.
-  pinMode(12,INPUT);  //Attaching exit_IR to D6
-  entry_servo.attach(13); // Attaching Servo to D7
+  pinMode(12,INPUT);  //Attaching exit_IR to D6.
+  entry_servo.attach(13); // Attaching Servo to D7.
   exit_servo.attach(15); // Attaching Servo to D8
   Serial.begin(9600);
   delay(500);
