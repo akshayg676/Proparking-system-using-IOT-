@@ -17,7 +17,7 @@
 #define Rw_pin 1 
 #define En_pin 2
 #define BACKLIGHT_PIN 3
-#define D4_pin 4
+#define D4_pin 4 
 #define D5_pin 5
 #define D6_pin 6
 #define D7_pin 7
