@@ -14,7 +14,7 @@
 
 // LCD Pins to I2C LCD Backpack - These are default for HD44780 LCD's.
 #define Rs_pin 0
-#define Rw_pin 1
+#define Rw_pin 1 
 #define En_pin 2
 #define BACKLIGHT_PIN 3
 #define D4_pin 4
