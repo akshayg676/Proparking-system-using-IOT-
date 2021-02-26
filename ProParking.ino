@@ -30,7 +30,7 @@ Servo entry_servo; // Giving name to entry_servo.
 Servo exit_servo; // Giving name to exit_servo.
 
 int entry_ir;
-int exit_ir;
+int exit_ir; 
 long randNumber;
 
 void setup() {
