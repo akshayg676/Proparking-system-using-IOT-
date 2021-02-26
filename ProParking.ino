@@ -10,7 +10,7 @@
 
 #define ON_Board_LED 2  //--> Defining an On Board LED, used for indicators when the process of connecting to a wifi router.
 
-#define lcd_addr 0x27     // I2C address of typical I2C LCD Backpack.
+#define lcd_addr 0x27    // I2C address of typical I2C LCD Backpack.
 
 // LCD Pins to I2C LCD Backpack - These are default for HD44780 LCD's.
 #define Rs_pin 0
